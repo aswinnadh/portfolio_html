@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Aswin Nadh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><img
+                    id="modeToggle" class="icon color-icon" 
+                    src="./assets/theme_light.png" 
+                    src_light="./assets/theme_light.png"
+                    src_dark="./assets/theme_dark.png"
+                    alt="mode icon" 
+                /></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aswin Nadh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img
+                    id="modeToggle2" class="icon color-icon" 
+                    src="./assets/theme_light.png" 
+                    src_light="./assets/theme_light.png"
+                    src_dark="./assets/theme_dark.png"
+                    alt=" mode icon" 
+                /></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" data-value="5" alt="Aswin Nadh profile picture" class="profile-pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1" data-value="2">Hello, I'm</p>
+            <h1 class="tittle" data-value="-2">Aswin Nadh</h1>
+            <p class="section__text__p2" data-value="2">UI\UX Developer</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2" data-value="-1"
+                    onclick="window.open('./assets/resume.pdf')">
+                Download CV</button>
+                <button
+                    class="btn btn-color-1" data-value="-1"
+                    onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin_light.png" 
+                    src_light="./assets/linkedin_light.png"
+                    src_dark="./assets/linkedin_dark.png"
+                    alt="my LinkedIN profile"
+                    class="icon linkedin-icon" data-value="1" 
+                    onclick="location.href='https://www.linkedin.com/in/aswin-nadh-b8717b22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '"/>
+                <img src="./assets/github_light.png" 
+                    src_light="./assets/github_light.png"
+                    src_dark="./assets/github_dark.png"
+                    alt="my github profile"
+                    class="icon github-icon" data-value="1"
+                    onclick="location.href='https://github.com/aswinnadh'"/>
+                <img src="./assets/gmail_light.png" 
+                    src_light="./assets/gmail_light.png"
+                    src_dark="./assets/gmail_dark.png"
+                    alt="my gmail profile"
+                    class="icon gmail-icon" data-value="1"
+                    onclick="location.href='mailto:aswinnadh9803@gmail.com/'"/>
+                <img src="./assets/instagram_light.png"
+                    src_light="./assets/instagram_light.png"
+                    src_dark="./assets/instagram_dark.png"
+                    alt="my insta profile"
+                    class="icon instagram-icon" data-value="1"
+                    onclick="location.href='https://www.instagram.com/aswin_nadh_?igsh=NHc3aG94cGsxcnRx'"/>
+                <img src="./assets/facebook_light.png" 
+                    src_light="./assets/facebook_light.png"
+                    src_dark="./assets/facebook_dark.png"
+                    alt="facebook profile" data-value="1"
+                    class="icon facebook-icon" onclick=location.href='https://www.facebook.com/share/RX8YrZKZdhddjPQW/?mibextid=qi2Omg'"/>
+                <img src="./assets/whatsapp_light.png" 
+                    src_light="./assets/whatsapp_light.png"
+                    src_dark="./assets/whatsapp_dark.png"
+                    alt="whatsapp profile" data-value="1"
+                    class="icon whatsapp-icon" onclick="location.href='https://wa.me/+917510131080'"/>
+            </div>
+            <img src="./assets/arrow_light.png" 
+            src_light="./assets/arrow_light.png"
+            src_dark="./assets/arrow_dark.png"
+            alt="arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#about'"/>
+        </div>
+    </section>
+    <section id="about" >
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="tittle">About Me</h1>
+        <div class="section-container">
+            <div class="about-section__pic-container">
+                <img src="./assets/about-pic.png" 
+                    alt="profil picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers" data-value="-3">
+                    <div class="details-container">
+                        <img src="./assets/experience_light.png" 
+                            src_light="./assets/experience_light.png"
+                            src_dark="./assets/experience_dark.png"
+                            alt="exp icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Started trainig <br> UI\UX Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education_light.png" 
+                            src_light="./assets/education_light.png"
+                            src_dark="./assets/education_dark.png"
+                            alt="edu icon" 
+                            class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech Computer Science<br> APJ Abdul Kalam Technological University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        To secure a challenging position as a Computer Science Engineering fresher in a dynamic organization that allows me to utilize my technical skills, contribute to innovative projects, and further enhance my knowledge and expertise in the field. I am seeking an environment that fosters professional growth and offers opportunities for continuous learning, enabling me to make a significant impact in the ever-evolving technology landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png"
+            src_light="./assets/arrow_light.png"
+            src_dark="./assets/arrow_dark.png" 
+            alt="arrow icon" 
+            class="icon arrow" 
+            onclick ="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="tittle">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers" data-value="3">
+                <div class="details-container">
+                    <h2 class="experience-sub-tittle">Frondend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png"
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                             alt="check mark" 
+                             class="icon"/>
+                            <div>
+                                <h3>Flutter</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png"
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                 alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                            src_light="./assets/checkmark_light.png"
+                            src_dark="./assets/checkmark_dark.png"
+                            alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-tittle">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>c,c++</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"   
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>python</h3>
+                                <p>basics</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>java</h3>
+                                <p>basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"   
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>GIT</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" 
+        src_light="./assets/arrow_light.png"
+            src_dark="./assets/arrow_dark.png"
+        alt="arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent Projects</p>
+        <h1 class="tittle">Projects</h1>
+        <div class="experience-details-container-project">
+            <div class="project-containers">
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="project 1" class="project-image">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Portfolio</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                       <img src="./assets/project-2.png" alt="project 2" class="project-image">
+                    </div>
+                        <h2 class="experience-sub-tittle project-tittle">Netflix Clone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="project 3" class="project-image">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Pet Rescue</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="project 1" class="project-image">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Money manager</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                       <img src="./assets/project-5.png" alt="project 2" class="project-image">
+                        </div>
+                        <h2 class="experience-sub-tittle project-tittle">Personal website</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Live Demo
+                            </button>
+                        </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="project 3" class="project-image">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Pet Resque</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="project 1" class="project-image">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Portfolio</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="project-details-container color-container">
+                    <div class="article-container">
+                       <img src="./assets/project-2.png" alt="project 2" class="project-image">
+                        </div>
+                        <h2 class="experience-sub-tittle project-tittle"> Netflix clone</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https//github.com/'">
+                            Live Demo
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" 
+            src_light="./assets/arrow_light.png"
+            src_dark="./assets/arrow_dark.png"
+            alt="arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1"Get in Touch></p>
+        <h1 class="tittle">Contact Me</h1>
+        <div class="contact-info-upper-container" data-value="2">
+            <div class="contact-info-container">
+                <img src="./assets/gmail_light.png"
+                src_light="./assets/gmail_light.png"
+                src_dark="./assets/gmail_dark.png"
+                alt="my gmail profile"
+                class="icon gmail-icon">
+                <p><a href="mailto:aswinnadh9803@gmail.com">aswinnadh9803@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin_light.png" 
+                src_light="./assets/linkedin_light.png"
+                src_dark="./assets/linkedin_dark.png"
+                alt="my LinkedIN profile"
+                class="icon linkedin-icon">
+                <p><a href="https://www.linkedin.com/in/aswin-nadh-b8717b22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Aswin Nadh</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Aswin Nadh. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
