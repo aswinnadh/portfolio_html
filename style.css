@@ -432,6 +432,91 @@ article{
     justify-content: space-around;
     gap: 0.5rem;
 }
+
+.portfolio#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.close {
+    position: absolute;
+    right:-5rem;
+    top: 2.5rem;
+}
+
+#popup
+{
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rbga(0,0,0,.30);
+    background-color: var(--background-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.popup-sub-tittle{
+    color: var(--secondary-color);
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.popup-containers{
+    display: inline-block;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overscroll-behavior-inline: contain;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    animation: 10s scroll infinite linear;
+    overflow-x: auto;
+}
+.popup-containers:hover{
+    animation-play-state: paused;
+}
+
+.popup-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+.popup-details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background:var(--primary-color);
+    border-radius: 2rem;
+    border: var(--button-border);
+    border-color:var(--container-border);
+    text-align: center;
+    transition-property: all;
+}
+.popup-details-container:hover {
+    transform: scale3d(1.1,1.1,1);
+}
+
+.crt-image{
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 15%;
+}
 /*projects*/
 #projects {
     position: relative;
@@ -449,7 +534,7 @@ article{
     margin: 1rem;
     color: var(--secondary-color);
 }
-.projevt-btn{
+.project-btn{
     color: var(--secondary-color);
     border-color: var(var(--container-border));
 }
@@ -462,7 +547,6 @@ article{
     border-color:var(--container-border);
     text-align: center;
     transition-property: all;
-    
 }
 .project-details-container:hover {
     transform: scale3d(1.1,1.1,1);
