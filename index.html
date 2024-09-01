@@ -6,6 +6,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="certificate.html">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -15,6 +16,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><img
                     id="modeToggle" class="icon color-icon" 
@@ -39,6 +41,7 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 <li><img
                     id="modeToggle2" class="icon color-icon" 
@@ -269,15 +272,20 @@
                                 <p>intermediate</p>
                             </div>
                         </article>
+                        <div class="text-container">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button
-            class="btn btn-color-2 " data-value="-1"
-            onclick="window.open('./assets/certificates.pdf')" >
-            Certificates
-        </button>
+        <div class="crt-btn">
+            <button
+                class="btn btn-color-2" data-value="-1"
+                onclick="location.href='certificate.html'" >
+                Certificates
+            </button>
+        </div>
         <img src="./assets/arrow_light.png" 
         src_light="./assets/arrow_light.png"
             src_dark="./assets/arrow_dark.png"
@@ -391,7 +399,7 @@
                 <div class="project-details-container color-container">
                     <div class="article-container">
                        <img src="./assets/project-2.png" alt="project 2" class="project-image">
-                        </div>
+                    </div>
                         <h2 class="experience-sub-tittle project-tittle"> Netflix clone</h2>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aswinnadh/netflix'">
@@ -400,7 +408,7 @@
                             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aswinnadh/netflix'">
                             Live Demo
                             </button>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -410,6 +418,110 @@
             alt="arrow icon" 
             class="icon arrow" 
             onclick="location.href='./#contact'"/>
+    </section>
+    <section id="education">
+        <p class="section__text__p1">A Glimpse Through </p>
+        <h1 class="tittle">Education</h1>
+        
+        <div class="section-container">
+            <div class="about-details-container education-about-container">
+                <div class="about-containers" data-value="-3">
+                    <div class="details-container">
+                        <img src="./assets/experience_light.png" 
+                            src_light="./assets/experience_light.png"
+                            src_dark="./assets/experience_dark.png"
+                            alt="exp icon"
+                            class="icon"
+                        />
+                        <h3>B-Tech</h3>
+                        <p>Computer Science & Engineering <br>CGPA - 7.3 (2020-2024) <br>APJ Abdul Kalam Technological University. <br> Mangalam College of Engineering Kottayam.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience_light.png" 
+                            src_light="./assets/experience_light.png"
+                            src_dark="./assets/experience_dark.png"
+                            alt="exp icon"
+                            class="icon"
+                        />
+                        <h3>12 th</h3>
+                        <p>Computer Science<br>DHSE - State Board of Kerala<BR> Percentage - 98% (2018-2020)<br>GHSS Chittar</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience_light.png" 
+                            src_light="./assets/experience_light.png"
+                            src_dark="./assets/experience_dark.png"
+                            alt="exp icon"
+                            class="icon"
+                        />
+                        <h3>10 th</h3>
+                        <p>KBPE - Kerala Board of Public Examinations<br> Percentage - 98% (2017-2018)<br>K R P M Higher Secondary School Seethathodu</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-tittle">Extracurricular Activities</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png"
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                             alt="check mark" 
+                             class="icon"/>
+                            <div>
+                                <h3>Coordinator of Inter College Technical fest Code Veda</h3>
+                                <p>2024</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png"
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                             alt="check mark" 
+                             class="icon"/>
+                            <div>
+                                <h3>Volunteer of National Service Scheme </h3>
+                                <p>2018-2023</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png"
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                 alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>Member of Additional Skill Acquisition Program (ASAP)</h3>
+                                <p>2018-2020</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                            src_light="./assets/checkmark_light.png"
+                            src_dark="./assets/checkmark_dark.png"
+                            alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>Students Police Cadet </h3>
+                                <p>2016-2018</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" 
+                                src_light="./assets/checkmark_light.png"
+                                src_dark="./assets/checkmark_dark.png"
+                                alt="exp icon" class="icon"/>
+                            <div>
+                                <h3>College Sports Committee Member</h3>
+                                <p>2023-2024</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png"
+            src_light="./assets/arrow_light.png"
+            src_dark="./assets/arrow_dark.png" 
+            alt="arrow icon" 
+            class="icon arrow" 
+            onclick ="location.href='./#experience'"/> 
     </section>
     <section id="contact">
         <p class="section__text__p1"Get in Touch></p>
@@ -441,6 +553,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

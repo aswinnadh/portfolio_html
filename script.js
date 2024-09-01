@@ -59,3 +59,12 @@ function setLightMode() {
         icon.src =icon.getAttribute("src_light");
     });
 }
+
+function toggle1(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle1('active');
+    var popup1 = document.getElementById('popup1');
+    popup1.classList.toggle1('active');
+}
+
+

@@ -57,7 +57,10 @@
 h3 {
     color: var(--secondary-color)
 }
-
+h4 {
+    color: var(--secondary-color);
+    font-size:xx-small;
+}
 body{
     font-family:"Poppins", sans-serif;
     background-color: var(--background-color);
@@ -389,10 +392,11 @@ section{
     width: 400px;
     margin: 4 0;
 }
-h3, .experience-sub-tittle{
+
+h3, h4.experience-sub-tittle,.crt-sub-tittle{
     transition-property: all;
 }
-h3:hover, .experience-sub-tittle:hover{
+h3:hover, h4:hover, .experience-sub-tittle:hover,.crt-sub-tittle:hover{
     transform: translateY(-10px);
 }
 /*experience section*/
@@ -405,6 +409,7 @@ h3:hover, .experience-sub-tittle:hover{
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
+
 .experience-details-container{
     display: flex;
     justify-content: center;
@@ -417,6 +422,7 @@ h3:hover, .experience-sub-tittle:hover{
     flex-direction: column;
     overflow-x:auto;
 }
+
 .article-container{
     display: flex;
     text-align: initial;
@@ -433,11 +439,7 @@ article{
     gap: 0.5rem;
 }
 
-.portfolio#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
+
 
 .close {
     position: absolute;
@@ -445,77 +447,11 @@ article{
     top: 2.5rem;
 }
 
-#popup
-{
-    position:fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    padding: 50px;
-    box-shadow: 0 5px 30px rbga(0,0,0,.30);
-    background-color: var(--background-color);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    
-}
-
-#popup.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-
-}
-
-.popup-sub-tittle{
-    color: var(--secondary-color);
-    font-weight: 200;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-.popup-containers{
-    display: inline-block;
-    grid-auto-flow: column;
-    grid-auto-columns: 25%;
-    overscroll-behavior-inline: contain;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    animation: 10s scroll infinite linear;
-    overflow-x: auto;
-}
-.popup-containers:hover{
-    animation-play-state: paused;
-}
-
-.popup-container{
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-}
-.popup-details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background:var(--primary-color);
-    border-radius: 2rem;
-    border: var(--button-border);
-    border-color:var(--container-border);
-    text-align: center;
-    transition-property: all;
-}
-.popup-details-container:hover {
-    transform: scale3d(1.1,1.1,1);
-}
 
 .crt-image{
     border-radius: 0.5rem;
-    width: 20%;
-    height: 15%;
+    width: 60%;
+    height: 80%;
 }
 /*projects*/
 #projects {
@@ -550,6 +486,14 @@ article{
 }
 .project-details-container:hover {
     transform: scale3d(1.1,1.1,1);
+}
+#education
+{
+    position: relative;
+}
+.education-about-container{
+    width: 100%;
+    padding-top: 15px;
 }
 
 /*contact*/
@@ -594,4 +538,74 @@ footer p{
 }
 .project-image{
     width: 30vh;
+}
+.crt-sub-tittle{
+    color: var(--secondary-color);
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.crt-scroll{
+    animation: none
+}
+.crt-tittle{
+    display: flex;
+    justify-content: center;
+}
+.blur-container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.crt-btn{
+    display: flex;
+    justify-content: center;
+}
+#popup1
+{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rbga(0,0,0,.30);
+    background-color: var(--background-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+#popup1.active
+{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.crt-img{
+    display: flex;
+    height: 75%;
+    width: 100%;
+    margin: 4 0;
+}
+
+.crt-img-container {
+    display: flex;
+    padding: 1.5rem;
+    flex: 1;
+    background:var(--primary-color);
+    border-radius: 2rem;
+    border: var(--button-border);
+    border-color:var(--container-border);
+    text-align: center;
+    transition-property: all;
+}
+
+.close-crt{
+    display: flex;
+     justify-content: space-between;
+     padding: 2rem;
 }
