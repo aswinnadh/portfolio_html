@@ -172,7 +172,7 @@ nav a:hover {
     list-style: none;
 }
 .menu-links.open{
-    max-height: 300px;
+    max-height: 400px;
 }
 .hamburger-icon.open span:first-child{
     transform: rotate(45deg) translate(10px,5px);
@@ -192,6 +192,7 @@ nav a:hover {
 .hamburger-icon span:fist-child{
     transform: none;
 }
+
 /*section*/
 section{
     padding-top: 4vh;
