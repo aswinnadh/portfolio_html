@@ -478,9 +478,6 @@ article{
 .project-details-container:hover {
     transform: scale3d(1.1,1.1,1);
 }
-.experience-details-container-project{
-    overflow-x: auto;
-}
 #education
 {
     position: relative;

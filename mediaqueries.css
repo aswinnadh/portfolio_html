@@ -7,10 +7,6 @@
     .about-containers {
         flex-wrap: wrap;
     }
-    #popup1
-    {
-        width: 1200px;
-    }
 }
 
 
@@ -49,10 +45,6 @@
     }
     .about-containers{
         margin-top: 0;
-    }
-    #popup1
-    {
-        width: 800px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -115,11 +107,6 @@
     }
     .text-container {
         text-align: justify;
-    }
-    #popup1
-    {
-        width: 400px;
-        
     }
     
 }
